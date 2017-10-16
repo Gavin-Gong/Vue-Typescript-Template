@@ -1,30 +1,9 @@
 # vue-ts
 
-> vue & ts
+> vue typescript template
 
-## Build Setup
+vue-router d.ts 展示需要自己修改， 不然会报 can't find name Vue
+將 `import Vue = require('vue')`
+修正為 `import Vue from'vue'`即可
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+或者 vue最新dev分支是可用的

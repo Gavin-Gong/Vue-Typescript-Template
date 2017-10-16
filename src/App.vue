@@ -5,10 +5,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue, { ComponentOptions } from 'vue'
 export default {
   name: 'app'
-}
+} as ComponentOptions<Vue>
 </script>
 
 <style>

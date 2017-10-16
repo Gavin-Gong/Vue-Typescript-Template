@@ -20,13 +20,21 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+<script lang="ts">
+import Vue, { ComponentOptions } from 'vue'
+import Component from 'vue-class-component';
+
+@Component({})
+export default class HelloWorld extends Vue {
+  name: 'HelloWorld'
+  msg: string = 'ts'
+  // data () {
+  //   return {
+  //     msg: 'Welcome to Your Vue.js App'
+  //   }
+  // }
+  mounted () {
+    console.log('mounted')
   }
 }
 </script>
