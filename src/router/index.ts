@@ -1,23 +1,23 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import { RouterOptions } from 'vue-router'
-import HelloWorld from '../components/HelloWorld.vue'
-import Foo from '../components/foo/index.ts'
+import Vue from 'vue';
+import Router from 'vue-router';
+import { RouterOptions } from 'vue-router';
+import Foo from '../components/foo';
+import HelloWorld from '../components/HelloWorld.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 const routes = {
   routes: [
     {
       path: '/',
       name: 'Hello',
-      component: HelloWorld
+      component: HelloWorld,
     },
     {
       path: '/foo',
       name: 'Foo',
-      component: Foo
-    }
-  ]
-}
+      component: Foo,
+    },
+  ],
+};
 
-export default new Router(routes as RouterOptions)
+export default new Router(routes as RouterOptions);
